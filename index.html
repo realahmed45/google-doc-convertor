@@ -22,9 +22,10 @@
       body {
         font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
           sans-serif;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
         min-height: 100vh;
         padding: 20px;
+        color: white;
       }
 
       .container {
@@ -42,22 +43,25 @@
         font-size: 2.5rem;
         margin-bottom: 10px;
         font-weight: 700;
+        color: #ff7700;
       }
 
       .header p {
         font-size: 1.2rem;
         opacity: 0.9;
         margin-bottom: 20px;
+        color: #e5e5e5;
       }
 
       .header .brand {
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 119, 0, 0.1);
         backdrop-filter: blur(10px);
         padding: 8px 16px;
         border-radius: 20px;
         display: inline-block;
         font-size: 0.9rem;
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 119, 0, 0.3);
+        color: #ff7700;
       }
 
       .instructions {
@@ -66,16 +70,21 @@
         border-radius: 16px;
         padding: 30px;
         margin-bottom: 30px;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        color: #1a1a1a;
       }
 
       .instructions h3 {
-        color: #1e293b;
+        color: #1a1a1a;
         margin-bottom: 20px;
         font-size: 1.4rem;
         display: flex;
         align-items: center;
         gap: 10px;
+      }
+
+      .instructions h3 i {
+        color: #ff7700;
       }
 
       .steps {
@@ -86,14 +95,14 @@
       }
 
       .step {
-        background: #f8fafc;
+        background: #f8f8f8;
         padding: 20px;
         border-radius: 12px;
-        border-left: 4px solid #667eea;
+        border-left: 4px solid #ff7700;
       }
 
       .step-number {
-        background: #667eea;
+        background: #ff7700;
         color: white;
         width: 24px;
         height: 24px;
@@ -107,13 +116,13 @@
       }
 
       .step h4 {
-        color: #1e293b;
+        color: #1a1a1a;
         margin-bottom: 8px;
         font-size: 1rem;
       }
 
       .step p {
-        color: #64748b;
+        color: #666;
         font-size: 0.9rem;
         line-height: 1.5;
       }
@@ -123,12 +132,13 @@
         backdrop-filter: blur(20px);
         border-radius: 20px;
         padding: 40px;
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
         border: 1px solid rgba(255, 255, 255, 0.3);
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 40px;
         min-height: 600px;
+        color: #1a1a1a;
       }
 
       @media (max-width: 1024px) {
@@ -147,7 +157,7 @@
       .section-title {
         font-size: 1.4rem;
         margin-bottom: 20px;
-        color: #1e293b;
+        color: #1a1a1a;
         display: flex;
         align-items: center;
         gap: 12px;
@@ -155,7 +165,7 @@
       }
 
       .section-title i {
-        color: #667eea;
+        color: #ff7700;
         font-size: 1.2rem;
       }
 
@@ -181,24 +191,24 @@
       }
 
       .btn-primary {
-        background: linear-gradient(135deg, #667eea, #764ba2);
+        background: linear-gradient(135deg, #ff7700, #ff9933);
         color: white;
-        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        box-shadow: 0 4px 12px rgba(255, 119, 0, 0.3);
       }
 
       .btn-primary:hover {
         transform: translateY(-2px);
-        box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        box-shadow: 0 8px 20px rgba(255, 119, 0, 0.4);
       }
 
       .btn-secondary {
-        background: #f1f5f9;
-        color: #475569;
-        border: 1px solid #e2e8f0;
+        background: #f1f1f1;
+        color: #333;
+        border: 1px solid #ddd;
       }
 
       .btn-secondary:hover {
-        background: #e2e8f0;
+        background: #e0e0e0;
         transform: translateY(-1px);
       }
 
@@ -218,9 +228,9 @@
 
       .file-label {
         padding: 12px 24px;
-        background: #f8fafc;
-        color: #475569;
-        border: 2px dashed #cbd5e1;
+        background: #f8f8f8;
+        color: #333;
+        border: 2px dashed #ccc;
         border-radius: 10px;
         cursor: pointer;
         display: flex;
@@ -233,14 +243,14 @@
       }
 
       .file-label:hover {
-        border-color: #667eea;
-        background: #f0f4ff;
-        color: #667eea;
+        border-color: #ff7700;
+        background: #fff5f0;
+        color: #ff7700;
       }
 
       .textarea {
         flex: 1;
-        border: 2px solid #e2e8f0;
+        border: 2px solid #e0e0e0;
         border-radius: 12px;
         padding: 20px;
         font-size: 14px;
@@ -253,31 +263,31 @@
       }
 
       .textarea:focus {
-        border-color: #667eea;
-        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        border-color: #ff7700;
+        box-shadow: 0 0 0 3px rgba(255, 119, 0, 0.1);
       }
 
       #htmlInput {
         background: #fafafa;
-        color: #374151;
+        color: #333;
       }
 
       #markdownOutput {
-        background: #1e293b;
-        color: #e2e8f0;
+        background: #1a1a1a;
+        color: #e0e0e0;
         font-family: "JetBrains Mono", monospace;
       }
 
       .yaml-section {
-        background: #fffbeb;
-        border: 1px solid #fed7aa;
+        background: #fff7e6;
+        border: 1px solid #ffd699;
         border-radius: 10px;
         padding: 20px;
         margin-bottom: 20px;
       }
 
       .yaml-section h4 {
-        color: #d97706;
+        color: #cc5500;
         margin-bottom: 15px;
         display: flex;
         align-items: center;
@@ -300,12 +310,12 @@
       .input-group label {
         font-size: 0.85rem;
         font-weight: 500;
-        color: #92400e;
+        color: #cc5500;
       }
 
       .input-group input {
         padding: 8px 12px;
-        border: 1px solid #fed7aa;
+        border: 1px solid #ffd699;
         border-radius: 6px;
         font-size: 0.85rem;
         background: white;
@@ -313,13 +323,13 @@
 
       .input-group input:focus {
         outline: none;
-        border-color: #f59e0b;
-        box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.1);
+        border-color: #ff7700;
+        box-shadow: 0 0 0 2px rgba(255, 119, 0, 0.1);
       }
 
       .yaml-preview {
-        background: #451a03;
-        color: #fed7aa;
+        background: #2a2a2a;
+        color: #ffd699;
         padding: 15px;
         border-radius: 8px;
         font-family: "JetBrains Mono", monospace;
@@ -327,6 +337,64 @@
         white-space: pre-wrap;
         max-height: 150px;
         overflow-y: auto;
+      }
+
+      .image-section {
+        background: #f0f8ff;
+        border: 1px solid #b3d9ff;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      .image-section h4 {
+        color: #0066cc;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .image-upload-area {
+        border: 2px dashed #b3d9ff;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        background: #f8fcff;
+        margin-bottom: 15px;
+      }
+
+      .image-upload-area.dragover {
+        border-color: #0066cc;
+        background: #e6f3ff;
+      }
+
+      .image-list {
+        max-height: 200px;
+        overflow-y: auto;
+        background: white;
+        border-radius: 8px;
+        padding: 10px;
+      }
+
+      .image-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px;
+        border-bottom: 1px solid #eee;
+      }
+
+      .image-item:last-child {
+        border-bottom: none;
+      }
+
+      .image-preview {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 4px;
+        border: 1px solid #ddd;
       }
 
       .footer {
@@ -340,6 +408,7 @@
       .footer h4 {
         margin-bottom: 15px;
         font-size: 1.1rem;
+        color: #ff7700;
       }
 
       .footer p {
@@ -348,7 +417,7 @@
       }
 
       .footer a {
-        color: #fde68a;
+        color: #ff7700;
         text-decoration: none;
       }
 
@@ -372,6 +441,7 @@
         align-items: center;
         gap: 10px;
         min-width: 300px;
+        color: #333;
       }
 
       .notification.show {
@@ -380,6 +450,14 @@
 
       .notification i {
         color: #10b981;
+      }
+
+      .notification.error {
+        border-left-color: #ef4444;
+      }
+
+      .notification.error i {
+        color: #ef4444;
       }
     </style>
   </head>
@@ -404,10 +482,8 @@
           </div>
           <div class="step">
             <div class="step-number">2</div>
-            <h4>Upload or Paste Content</h4>
-            <p>
-              Upload the HTML file or paste the HTML content in the left panel
-            </p>
+            <h4>Upload HTML & Images</h4>
+            <p>Upload the HTML file and any images from your Google Doc</p>
           </div>
           <div class="step">
             <div class="step-number">3</div>
@@ -419,6 +495,24 @@
             <h4>Convert & Download</h4>
             <p>Click convert, copy the markdown, and save as project-name.md</p>
           </div>
+        </div>
+        <div
+          style="
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+          "
+        >
+          <h4 style="color: #856404; margin-bottom: 10px">
+            <i class="fas fa-info-circle"></i> Image Handling
+          </h4>
+          <p style="color: #856404; margin: 0">
+            When you download your Google Doc as HTML, images are embedded as
+            base64 data. Upload your images separately below to get proper
+            markdown image references.
+          </p>
         </div>
       </div>
 
@@ -466,6 +560,34 @@ Example:
   <li>TensorFlow</li>
 </ul>"
           ></textarea>
+
+          <div class="image-section">
+            <h4><i class="fas fa-images"></i> Image Upload</h4>
+            <div class="image-upload-area" id="imageUploadArea">
+              <i
+                class="fas fa-cloud-upload-alt"
+                style="font-size: 2rem; color: #0066cc; margin-bottom: 10px"
+              ></i>
+              <p style="margin-bottom: 10px; color: #0066cc">
+                Drag & drop images here or click to browse
+              </p>
+              <input
+                type="file"
+                id="imageInput"
+                multiple
+                accept="image/*"
+                style="display: none"
+              />
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="document.getElementById('imageInput').click()"
+              >
+                <i class="fas fa-folder-open"></i> Browse Images
+              </button>
+            </div>
+            <div class="image-list" id="imageList"></div>
+          </div>
         </div>
 
         <div class="output-section">
@@ -541,6 +663,16 @@ Example:
               <i class="fas fa-download"></i>
               Download .md File
             </button>
+
+            <button
+              class="btn btn-secondary"
+              onclick="downloadImages()"
+              style="display: none"
+              id="downloadImagesBtn"
+            >
+              <i class="fas fa-download"></i>
+              Download Images
+            </button>
           </div>
 
           <textarea
@@ -553,7 +685,8 @@ The output will include:
 - YAML front matter with project details
 - Clean markdown formatted content
 - Proper heading structure
-- Code blocks and formatting preserved"
+- Code blocks and formatting preserved
+- Image references with proper paths"
           ></textarea>
         </div>
       </div>
@@ -577,6 +710,10 @@ The output will include:
     </div>
 
     <script>
+      // Global variables for image handling
+      let uploadedImages = [];
+      let imageCounter = 0;
+
       // File input handler
       document
         .getElementById("fileInput")
@@ -586,11 +723,92 @@ The output will include:
             const reader = new FileReader();
             reader.onload = function (e) {
               document.getElementById("htmlInput").value = e.target.result;
-              showNotification("File uploaded successfully!");
+              showNotification("HTML file uploaded successfully!");
             };
             reader.readAsText(file);
           }
         });
+
+      // Image upload handlers
+      const imageUploadArea = document.getElementById("imageUploadArea");
+      const imageInput = document.getElementById("imageInput");
+
+      imageUploadArea.addEventListener("click", () => {
+        imageInput.click();
+      });
+
+      imageUploadArea.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        imageUploadArea.classList.add("dragover");
+      });
+
+      imageUploadArea.addEventListener("dragleave", () => {
+        imageUploadArea.classList.remove("dragover");
+      });
+
+      imageUploadArea.addEventListener("drop", (e) => {
+        e.preventDefault();
+        imageUploadArea.classList.remove("dragover");
+        const files = Array.from(e.dataTransfer.files).filter((file) =>
+          file.type.startsWith("image/")
+        );
+        handleImageFiles(files);
+      });
+
+      imageInput.addEventListener("change", (e) => {
+        const files = Array.from(e.target.files);
+        handleImageFiles(files);
+      });
+
+      function handleImageFiles(files) {
+        files.forEach((file) => {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            const imageData = {
+              id: ++imageCounter,
+              name: file.name,
+              data: e.target.result,
+              file: file,
+            };
+            uploadedImages.push(imageData);
+            displayImageList();
+            showNotification(`Image "${file.name}" uploaded successfully!`);
+          };
+          reader.readAsDataURL(file);
+        });
+      }
+
+      function displayImageList() {
+        const imageList = document.getElementById("imageList");
+        const downloadBtn = document.getElementById("downloadImagesBtn");
+
+        imageList.innerHTML = "";
+
+        if (uploadedImages.length > 0) {
+          downloadBtn.style.display = "flex";
+        } else {
+          downloadBtn.style.display = "none";
+        }
+
+        uploadedImages.forEach((image) => {
+          const imageItem = document.createElement("div");
+          imageItem.className = "image-item";
+          imageItem.innerHTML = `
+            <img src="${image.data}" alt="${image.name}" class="image-preview">
+            <span style="flex: 1; font-size: 0.9rem;">${image.name}</span>
+            <button onclick="removeImage(${image.id})" style="background: none; border: none; color: #ef4444; cursor: pointer;">
+              <i class="fas fa-trash"></i>
+            </button>
+          `;
+          imageList.appendChild(imageItem);
+        });
+      }
+
+      function removeImage(imageId) {
+        uploadedImages = uploadedImages.filter((img) => img.id !== imageId);
+        displayImageList();
+        showNotification("Image removed successfully!");
+      }
 
       // Update YAML preview when inputs change
       const yamlInputs = [
@@ -739,9 +957,7 @@ date: ${new Date().toISOString().split("T")[0]}
               result = `> ${quoteText}\n\n`;
               break;
             case "img":
-              const src = node.getAttribute("src");
-              const alt = node.getAttribute("alt") || "Image";
-              result = src ? `![${alt}](${src})\n\n` : "";
+              result = processImage(node);
               break;
             case "br":
               result = "\n";
@@ -758,6 +974,34 @@ date: ${new Date().toISOString().split("T")[0]}
           }
 
           return result;
+        }
+
+        function processImage(imgNode) {
+          const src = imgNode.getAttribute("src");
+          const alt = imgNode.getAttribute("alt") || "Image";
+
+          // Check if it's a base64 image from Google Docs
+          if (src && src.startsWith("data:image/")) {
+            // Try to find a matching uploaded image by comparing base64 data
+            const matchingImage = uploadedImages.find((img) => {
+              return img.data === src;
+            });
+
+            if (matchingImage) {
+              // Use the uploaded image filename
+              const imagePath = `/images/${matchingImage.name}`;
+              return `![${alt}](${imagePath})\n\n`;
+            } else {
+              // Suggest manual image replacement
+              const imageName = `image-${Date.now()}.png`;
+              return `![${alt}](/images/${imageName})\n\n<!-- Note: Replace with actual image path -->\n\n`;
+            }
+          } else if (src) {
+            // Regular image with URL
+            return `![${alt}](${src})\n\n`;
+          }
+
+          return "";
         }
 
         function processChildren(node) {
@@ -800,6 +1044,17 @@ date: ${new Date().toISOString().split("T")[0]}
         // Process the content
         const processedMarkdown = processChildren(tempDiv);
         markdown += cleanupMarkdown(processedMarkdown);
+
+        // Add image references section if there are uploaded images
+        if (uploadedImages.length > 0) {
+          markdown += "\n\n## Image Files\n\n";
+          markdown +=
+            "The following images were uploaded with this document:\n\n";
+          uploadedImages.forEach((img) => {
+            markdown += `- ${img.name} → Place in \`/images/\` folder\n`;
+          });
+          markdown += "\n";
+        }
 
         document.getElementById("markdownOutput").value = markdown;
         showNotification("Conversion completed successfully!");
@@ -914,9 +1169,29 @@ tags: ${formattedTags}`;
         showNotification(`File downloaded as ${filename}`);
       }
 
+      function downloadImages() {
+        if (uploadedImages.length === 0) {
+          showNotification("No images to download!", "error");
+          return;
+        }
+
+        uploadedImages.forEach((image) => {
+          const link = document.createElement("a");
+          link.href = image.data;
+          link.download = image.name;
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        });
+
+        showNotification(`Downloaded ${uploadedImages.length} images`);
+      }
+
       function clearAll() {
         document.getElementById("htmlInput").value = "";
         document.getElementById("markdownOutput").value = "";
+        uploadedImages = [];
+        displayImageList();
         yamlInputs.forEach((id) => {
           document.getElementById(id).value = "";
         });
@@ -926,7 +1201,9 @@ tags: ${formattedTags}`;
 
       function showNotification(message, type = "success") {
         const notification = document.createElement("div");
-        notification.className = "notification";
+        notification.className = `notification ${
+          type === "error" ? "error" : ""
+        }`;
         notification.innerHTML = `
                 <i class="fas fa-${
                   type === "success" ? "check-circle" : "exclamation-circle"
